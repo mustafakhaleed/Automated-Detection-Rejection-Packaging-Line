@@ -1,1 +1,16 @@
+# Force detection of PLC Project files
+# Mapping to 'Assembly' or 'Verilog' often gives the best visual representation for Ladder Logic
+*.gxw linguist-language=Assembly
+*.gx3 linguist-language=Assembly
+*.gpj linguist-language=Assembly
 
+# Ensure the binary files are included in the language statistics
+*.gxw linguist-binary=false
+
+# Treat any exported PDF reports as documentation
+*.pdf linguist-documentation
+
+# Ignore any image assets from the language bar
+assets/* linguist-documentation
+*.png linguist-documentation
+*.jpg linguist-documentation
